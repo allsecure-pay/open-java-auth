@@ -34,7 +34,7 @@ public class Login extends HttpServlet {
 	        return;
 	    }
 	    if (request.getParameter("support") != null && request.getParameter("support").equals("Documentation")) {
-		    String host = "https://test.oppwa.com";
+		    String host = "https://eu-test.oppwa.com";
             String uri = "/authentication/v1/authenticate";
 		    String clientId = "8a82941850d047940150d2be3fd20911";
 		    String redirectUrl = "http://localhost:8080/opp-auth-service/SecondPage";

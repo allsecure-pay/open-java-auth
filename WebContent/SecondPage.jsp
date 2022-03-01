@@ -12,7 +12,7 @@
     
     <a href="https://allsecure.test.ctpe.info/login" target="blank">Merchant Portal</a>
     
-    <form action="https://test.oppwa.com/authentication/v1/logout">
+    <form action="https://eu-test.oppwa.com/authentication/v1/logout">
         <input type="hidden" name="post_logout_redirect_uri" value="http://localhost:8080/opp-auth-service/Logout"/>
         <input type="submit" value="Logout"/>
     </form>
@@ -28,7 +28,7 @@
         a.async = 1;
         a.src = u;
         m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', 'https://test.oppwa.com/authentication/v1/sessionTracker/oasm.js', '_OASM');
+    })(window, document, 'script', 'https://eu-test.oppwa.com/authentication/v1/sessionTracker/oasm.js', '_OASM');
      
     //put your client id instead of {your_client_id}
     _OASM('client_id', '8a82941850d047940150d2be3fd20911');

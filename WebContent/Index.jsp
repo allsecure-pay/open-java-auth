@@ -7,7 +7,7 @@
 </head>
 <body>
     <p>You are not logged in, to login, click the button below</p>
-    <form action="https://test.oppwa.com/authentication/v1/authenticate">
+    <form action="https://eu-test.oppwa.com/authentication/v1/authenticate">
     <input type="hidden" name="client_id" value="8a82941850d047940150d2be3fd20911"/>
     <input type="hidden" name="redirect_uri" value="http://localhost:8080/opp-auth-service/SecondPage"/>
     <input type="hidden" name="scope" value="openid"/>

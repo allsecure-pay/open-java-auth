@@ -84,7 +84,7 @@ public class SecondPage extends HttpServlet {
 
 	protected JSONObject getToken(String code) throws IOException, JSONException {
 	    System.out.println("=== getToken ===");
-		String gatewayUrl = "https://test.oppwa.com/authentication/v1/tokens";
+		String gatewayUrl = "https://eu-test.oppwa.com/authentication/v1/tokens";
 		String request = ""
 		+ "code=" + code
 		+ "&grant_type=authorization_code&redirect_uri=http://localhost:8080/opp-auth-service/SecondPage&scope=openid";
@@ -98,7 +98,7 @@ public class SecondPage extends HttpServlet {
 	protected JSONObject getUserInformation(String token) throws IOException,
 			JSONException {
 	    System.out.println("=== getUserInformation ===");
-		String gatewayUrl = "https://test.oppwa.com/authentication/v1/users";
+		String gatewayUrl = "https://eu-test.oppwa.com/authentication/v1/users";
 		String response = doHttpRequest(gatewayUrl, null, "GET", "application/x-www-form-urlencoded", token);
 		return new JSONObject(response.toString());
 	}
